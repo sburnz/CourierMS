@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+    <!--    <include layout="@layout/toolbar"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/etOtpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="150sp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:boxBackgroundMode="outline"
+        app:hintTextColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the OTP"
+            android:singleLine="true"
+            android:textColorHint="@color/hintColor"
+            android:id="@+id/etOtp"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btVerify"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/etOtpLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="30sp"
+        android:text="VERIFY ACCOUNT"
+        android:textSize="14sp"
+        android:textColor="#D4FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBack"
+        android:text="Back to Sign up"
+        android:textSize="12sp"
+        android:textColor="@color/textColor"
+        android:alpha=".63"
+        app:layout_constraintTop_toBottomOf="@+id/btVerify"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="20sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

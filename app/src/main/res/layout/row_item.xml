@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin"
+        android:id="@+id/cvHistory"
+        android:layout_marginHorizontal="@dimen/margin"
+        app:cardCornerRadius="6sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginVertical="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemName"
+                android:text="Item: Books"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:alpha=".83"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantity"
+                android:text="Delivered on: On process"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="2sp"
+                android:alpha=".83"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/parcelValue"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="2sp"
+                android:alpha=".83"/>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="1sp">-->
+
+<!--                <View-->
+<!--                    android:layout_width="16sp"-->
+<!--                    android:layout_height="16sp"-->
+<!--                    android:background="@drawable/cv_circle_bg"-->
+<!--                    android:id="@+id/circleStart"/>-->
+
+<!--                <View-->
+<!--                    android:layout_width="16sp"-->
+<!--                    android:layout_height="16sp"-->
+<!--                    android:background="@drawable/cv_circle_bg"-->
+<!--                    android:id="@+id/circleStation1"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+
+<!--                <View-->
+<!--                    android:layout_width="16sp"-->
+<!--                    android:layout_height="16sp"-->
+<!--                    android:background="@drawable/cv_circle_bg"-->
+<!--                    android:id="@+id/circleEnd"-->
+<!--                    android:layout_alignParentEnd="true"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/parcelValue"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:alpha=".83"-->
+<!--                    android:layout_below="@id/circleStart"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/tvStation1Add"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:alpha=".83"-->
+<!--                    android:layout_below="@id/circleStation1"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/tvEndAdd"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:alpha=".83"-->
+<!--                    android:layout_below="@id/circleEnd"-->
+<!--                    android:layout_alignParentEnd="true"/>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2sp"-->
+<!--                    android:layout_toEndOf="@id/circleStart"-->
+<!--                    android:layout_toStartOf="@id/circleStation1"-->
+<!--                    android:layout_marginTop="7sp"-->
+<!--                    android:alpha=".83"-->
+<!--                    android:background="#FFFFFF"-->
+<!--                    android:id="@+id/startToStation1"-->
+<!--                    />-->
+
+<!--            </RelativeLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="2sp"
+                android:alpha=".83"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost"
+                android:text="Cost: Rs. 1000/-"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="2sp"
+                android:alpha=".83"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

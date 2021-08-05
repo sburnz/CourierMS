@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHello"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Hello!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="40sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHello"
+        android:text="sth@gmail.com"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/textColor"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="10sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileRegionLayout"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        android:layout_marginTop="@dimen/margin"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivRegion"
+            android:src="@drawable/ic_region"
+            android:layout_marginStart="@dimen/margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRegion"
+            android:layout_marginStart="54sp"
+            android:layout_centerVertical="true"
+            android:text="Region"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRegionName"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Chitwan"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:layout_marginEnd="@dimen/margin"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileRegionLayout"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="54sp"
+        android:layout_marginEnd="@dimen/margin"
+        android:alpha=".83"
+        android:background="@color/colorAccent"
+        android:id="@+id/Divider1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btManageProfile"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintTop_toBottomOf="@id/Divider1"
+        android:background="@android:color/transparent"
+        android:text="Manage profile"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:paddingLeft="54sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btServiceInfo"
+        app:layout_constraintTop_toBottomOf="@id/btManageProfile"
+        android:background="@android:color/transparent"
+        android:text="Service information"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:paddingLeft="54sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAbout"
+        app:layout_constraintTop_toBottomOf="@id/btServiceInfo"
+        android:background="@android:color/transparent"
+        android:text="About"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:paddingLeft="54sp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btChangePw"
+        app:layout_constraintTop_toBottomOf="@id/btAbout"
+        android:background="@android:color/transparent"
+        android:text="Change password"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:paddingLeft="54sp"/>
+
+
+    <ImageView
+        android:layout_width="175sp"
+        android:layout_height="125sp"
+        android:id="@+id/ivTruckOnly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btChangePw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/truck_only"
+        app:layout_constraintVertical_bias=".3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLogOut"
+        app:layout_constraintTop_toBottomOf="@id/ivTruckOnly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_background"
+        android:layout_marginHorizontal="@dimen/margin"
+        app:layout_constraintVertical_bias=".25"
+        android:text="Log Out"
+        android:textSize="14sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Courier MS</string>
+    <string name="email_error">Field can\'t be empty</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="password_error">Field can\'t be empty</string>
+    <string name="name_error">Field can\'t be empty</string>
+    <string name="error_invalid_password">Password must be of at least 4 characters</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceInfoActivity">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courier waiting period at addresses"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:alpha=".83"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting period up to 15 minutes is free of charge. Next each additional 15 minutes will be charged at Rs 50."
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:alpha=".83"
+        android:layout_marginTop="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wish to contact us?"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:alpha=".83"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow our Facebook page 'fb.com/CourierMS' for more queries and answers. "
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:alpha=".83"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you need a report for your management?"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:alpha=".83"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The courier will not leave receipts for orders paid in cash. You can view your order history in your profile."
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:alpha=".83"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please note"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:alpha=".83"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We are always carrying out our works keeping the customer satisfaction as our top priority. If you see any needs of improvement in any matter, please feel free to give your feedbacks. They are more than welcomed."
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:alpha=".83"
+        android:textColor="@color/textColor"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:layout_marginTop="14sp"/>
+
+</LinearLayout>

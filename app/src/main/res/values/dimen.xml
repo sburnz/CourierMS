@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">24sp</dimen>
+    <dimen name="tvCirclePaddingVertical">4sp</dimen>
+    <dimen name="tvCirclePaddingHorizontal">9.5sp</dimen>
+</resources>

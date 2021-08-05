@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courier MS"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:alpha=".83"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_horizontal"
+        android:alpha=".37"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.fb.com/courierms"
+        android:textStyle="normal"
+        android:autoLink="web"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_horizontal"
+        android:alpha=".83"
+        android:layout_marginTop="@dimen/margin"/>
+
+</LinearLayout>
